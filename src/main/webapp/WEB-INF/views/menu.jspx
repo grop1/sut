@@ -7,5 +7,9 @@
             <menu:item id="i_ying_new" messageCode="global_menu_new" url="/yings?form" z="AyAHO8Ec3oTWoUgZ+kNABtevmp0="/>
             <menu:item id="i_ying_list" messageCode="global_menu_list" url="/yings?page=1&amp;size=${empty param.size ? 10 : param.size}" z="FEN3ZtSVPtkzMSZv5EgkLa1JyXk="/>
         </menu:category>
+        <menu:category id="c_customer" z="Wa+bVSiDyYo/wX1nGU1B/z+OKhE=">
+            <menu:item id="i_customer_new" messageCode="global_menu_new" url="/customers?form" z="d9+YIotZHp6KZLGKwwnMVzPvh8k="/>
+            <menu:item id="i_customer_list" messageCode="global_menu_list" url="/customers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Yo9cUtyc7EUvbxwQ7EoeqXWaVJM="/>
+        </menu:category>
     </menu:menu>
 </div>

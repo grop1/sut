@@ -20,3 +20,23 @@ focus --class ~.domain.Ying
 field number --fieldName age --type int 
 quit
 // Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-02-17 10:56:20
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-02-17 11:00:28
+// [failed] entity jpa --class ~domain.New 
+// [failed] field string --fieldName name --sizeMax 10
+exit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-02-17 11:05:04
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-02-17 11:05:11
+entity jpa --class ~.domain.customer
+field string --fieldName name --sizeMax 15
+field string --fieldName Lastname --sizeMax 10 
+field number --fieldName age --type int
+field date --fieldName duedate --type java.util.date
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-02-17 11:07:24
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-02-17 11:09:26
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-02-17 11:09:37
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-02-17 11:10:13
+web mvc all --package ~.web
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-02-17 11:10:43

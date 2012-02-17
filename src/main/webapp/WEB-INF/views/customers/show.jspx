@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_se_test_domain_Customer" object="${customer}" path="/customers" z="aBtXefZc8XFE6Bae9BPfKR2+gCg=">
+        <field:display field="name" id="s_se_test_domain_Customer_name" object="${customer}" z="9J2MoAqYwwplp8pxlJRR3k9l5hQ="/>
+        <field:display field="lastname" id="s_se_test_domain_Customer_Lastname" object="${customer}" z="f6HRAnlUeL3l7bV4NW3oyBKqo9o="/>
+        <field:display field="age" id="s_se_test_domain_Customer_age" object="${customer}" z="rLi9wP5R6fi0vbTTnAKmwjz29XU="/>
+        <field:display date="true" dateTimePattern="${customer_duedate_date_format}" field="duedate" id="s_se_test_domain_Customer_duedate" object="${customer}" z="1NS/xbxcjgfIsA9Yh95C090+vMg="/>
+    </page:show>
+</div>
