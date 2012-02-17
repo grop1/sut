@@ -5,5 +5,6 @@
     <form:update id="fu_se_test_domain_Ying" modelAttribute="ying" path="/yings" versionField="Version" z="BUGEqC7Kp8qutG98i87TtUhhEeI=">
         <field:input field="name" id="c_se_test_domain_Ying_name" min="2" required="true" z="hVd+s5zWWtcIgB85jfn7Crvzn2A="/>
         <field:datetime dateTimePattern="${ying_duedate_date_format}" field="duedate" id="c_se_test_domain_Ying_duedate" z="iAvbL3kO56d5A7ytfnrszjeEw/g="/>
+        <field:input field="age" id="c_se_test_domain_Ying_age" z="Q74Zx4hVFa/s+EPdY3hg5VUTjLA="/>
     </form:update>
 </div>

@@ -5,5 +5,6 @@
     <page:show id="ps_se_test_domain_Ying" object="${ying}" path="/yings" z="2yFquXYidvLqxUO6Tc3BnYsRWxY=">
         <field:display field="name" id="s_se_test_domain_Ying_name" object="${ying}" z="fr6dGNGEh0KYmWEbwmxt+3Mu8JM="/>
         <field:display date="true" dateTimePattern="${ying_duedate_date_format}" field="duedate" id="s_se_test_domain_Ying_duedate" object="${ying}" z="4IeJZ6eRoNqYxuSuOgKFznbuumo="/>
+        <field:display field="age" id="s_se_test_domain_Ying_age" object="${ying}" z="L+6fPe3Rdi29es3vpkxwRrv0+wY="/>
     </page:show>
 </div>

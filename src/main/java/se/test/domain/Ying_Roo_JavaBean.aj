@@ -24,4 +24,12 @@ privileged aspect Ying_Roo_JavaBean {
         this.duedate = duedate;
     }
     
+    public int Ying.getAge() {
+        return this.age;
+    }
+    
+    public void Ying.setAge(int age) {
+        this.age = age;
+    }
+    
 }
