@@ -11,5 +11,9 @@
             <menu:item id="i_customer_new" messageCode="global_menu_new" url="/customers?form" z="d9+YIotZHp6KZLGKwwnMVzPvh8k="/>
             <menu:item id="i_customer_list" messageCode="global_menu_list" url="/customers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Yo9cUtyc7EUvbxwQ7EoeqXWaVJM="/>
         </menu:category>
+        <menu:category id="c_memo" z="Ms0msU2x/UtGUsJp7pSWrmNRIJA=">
+            <menu:item id="i_memo_new" messageCode="global_menu_new" url="/memoes?form" z="Mh7VpnCs6ojcsGQ0lSp4WklY26A="/>
+            <menu:item id="i_memo_list" messageCode="global_menu_list" url="/memoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="rEJOJgHWovgq8WTVIEvBhamG9eM="/>
+        </menu:category>
     </menu:menu>
 </div>

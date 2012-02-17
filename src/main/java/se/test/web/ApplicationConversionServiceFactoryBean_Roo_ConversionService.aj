@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
 import se.test.domain.Customer;
+import se.test.domain.Memo;
 import se.test.domain.Ying;
 import se.test.web.ApplicationConversionServiceFactoryBean;
 
@@ -34,6 +35,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         return new org.springframework.core.convert.converter.Converter<java.lang.String, se.test.domain.Customer>() {
             public se.test.domain.Customer convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), Customer.class);
+            }
+        };
+    }
+    
+    public Converter<Memo, String> ApplicationConversionServiceFactoryBean.getMemoToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<se.test.domain.Memo, java.lang.String>() {
+            public String convert(Memo memo) {
+                return new StringBuilder().append(memo.getSubject()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Memo> ApplicationConversionServiceFactoryBean.getIdToMemoConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, se.test.domain.Memo>() {
+            public se.test.domain.Memo convert(java.lang.Long id) {
+                return Memo.findMemo(id);
+            }
+        };
+    }
+    
+    public Converter<String, Memo> ApplicationConversionServiceFactoryBean.getStringToMemoConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, se.test.domain.Memo>() {
+            public se.test.domain.Memo convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Memo.class);
             }
         };
     }
@@ -66,6 +91,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getCustomerToStringConverter());
         registry.addConverter(getIdToCustomerConverter());
         registry.addConverter(getStringToCustomerConverter());
+        registry.addConverter(getMemoToStringConverter());
+        registry.addConverter(getIdToMemoConverter());
+        registry.addConverter(getStringToMemoConverter());
         registry.addConverter(getYingToStringConverter());
         registry.addConverter(getIdToYingConverter());
         registry.addConverter(getStringToYingConverter());
