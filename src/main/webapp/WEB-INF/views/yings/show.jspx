@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_se_test_domain_Ying" object="${ying}" path="/yings" z="2yFquXYidvLqxUO6Tc3BnYsRWxY=">
+        <field:display field="name" id="s_se_test_domain_Ying_name" object="${ying}" z="fr6dGNGEh0KYmWEbwmxt+3Mu8JM="/>
+        <field:display date="true" dateTimePattern="${ying_duedate_date_format}" field="duedate" id="s_se_test_domain_Ying_duedate" object="${ying}" z="4IeJZ6eRoNqYxuSuOgKFznbuumo="/>
+    </page:show>
+</div>

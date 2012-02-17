@@ -1,0 +1,16 @@
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-02-17 10:33:23
+project --topLevelPackage Se.test
+jpa setup --provider HIBERNATE --database H2_IN_MEMORY 
+entity jpa --class ~.domain.Ying
+field string --fieldName name --sizeMin 2
+field date --fieldName duedate --type java.util.Date
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-02-17 10:35:22
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-02-17 10:35:42
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-02-17 10:36:07
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-02-17 10:38:10
+web mvc setup
+web mvc all --package ~.web
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-02-17 10:39:00
