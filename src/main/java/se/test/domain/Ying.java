@@ -20,4 +20,6 @@ public class Ying {
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date duedate;
+
+    private int age;
 }

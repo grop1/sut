@@ -16,7 +16,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Ying, String> ApplicationConversionServiceFactoryBean.getYingToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<se.test.domain.Ying, java.lang.String>() {
             public String convert(Ying ying) {
-                return new StringBuilder().append(ying.getName()).append(" ").append(ying.getDuedate()).toString();
+                return new StringBuilder().append(ying.getName()).append(" ").append(ying.getDuedate()).append(" ").append(ying.getAge()).toString();
             }
         };
     }

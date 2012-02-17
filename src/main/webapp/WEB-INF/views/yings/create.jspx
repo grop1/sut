@@ -5,6 +5,7 @@
     <form:create id="fc_se_test_domain_Ying" modelAttribute="ying" path="/yings" render="${empty dependencies}" z="HoucDzacC/ZHgU5JRlX+X5vKUas=">
         <field:input field="name" id="c_se_test_domain_Ying_name" min="2" required="true" z="hVd+s5zWWtcIgB85jfn7Crvzn2A="/>
         <field:datetime dateTimePattern="${ying_duedate_date_format}" field="duedate" id="c_se_test_domain_Ying_duedate" z="iAvbL3kO56d5A7ytfnrszjeEw/g="/>
+        <field:input field="age" id="c_se_test_domain_Ying_age" z="Q74Zx4hVFa/s+EPdY3hg5VUTjLA="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_se_test_domain_Ying" render="${not empty dependencies}" z="i+9wINFjFqfY2wLj/yza9GdJSmE="/>
 </div>

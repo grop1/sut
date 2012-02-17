@@ -6,6 +6,7 @@
         <table:table data="${yings}" id="l_se_test_domain_Ying" path="/yings" z="B97wtjRTV/H3aLwvLo/CJLPXxB0=">
             <table:column id="c_se_test_domain_Ying_name" property="name" z="9GibLV4gnLbnXGWcUx5dB7RM4aE="/>
             <table:column date="true" dateTimePattern="${ying_duedate_date_format}" id="c_se_test_domain_Ying_duedate" property="duedate" z="7GlNZL4Ia3/ZRa8PyoSXoJR3bOE="/>
+            <table:column id="c_se_test_domain_Ying_age" property="age" z="znEKHxg5OEuTtJ2XCuEQUbk+Uds="/>
         </table:table>
     </page:list>
 </div>
